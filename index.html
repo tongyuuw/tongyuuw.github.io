@@ -5,17 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="Tongyu (Tory) Wang is a researcher working across computational mechanics, medical robotics, force sensing, and simulation.">
-  <meta name="author" content="Tongyu(Tory) Wang">
-  <meta property="og:title" content="Tongyu(Tory) Wang | Researcher in Mechanics and Robotics">
+  <meta name="author" content="Tongyu (Tory) Wang">
+  <meta property="og:title" content="Tongyu (Tory) Wang | Researcher in Mechanics and Robotics">
   <meta property="og:description" content="Research in computational mechanics, medical robotics, force sensing, and simulation.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://tongyuuw.github.io/">
   <meta property="og:image" content="https://tongyuuw.github.io/images/tongyu-wang.png">
-  <title>Tongyu(Tory) Wang | Researcher in Mechanics and Robotics</title>
+  <title>Tongyu (Tory) Wang | Researcher in Mechanics and Robotics</title>
   <link rel="canonical" href="https://tongyuuw.github.io/">
-  <link rel="icon" href="images/favicon.ico" sizes="any">
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-  <link rel="apple-touch-icon" href="images/apple-touch-icon-180x180.png">
+  <link rel="icon" href="https://tongyuuw.github.io/images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="https://tongyuuw.github.io/images/favicon.svg">
   <link rel="stylesheet" href="assets/css/tongyu.css">
   <script type="application/ld+json">
   {
@@ -41,14 +40,14 @@
   <a class="skip-link" href="#content">Skip to content</a>
 
   <header class="site-header">
-    <a class="wordmark" href="#top">Tongyu(Tory) Wang</a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" title="Open navigation">
+    <a class="wordmark" href="#top" aria-label="Tongyu Wang, back to top">Tongyu (Tory) Wang</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
       <span></span><span></span><span></span>
     </button>
     <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
-      <a href="cv.html">CV</a>
+      <a href="https://tongyuuw.github.io/cv.html">CV</a>
       <a href="https://www.linkedin.com/in/tongyu-wang-9b972241a/" target="_blank" rel="noreferrer">LinkedIn</a>
       <a href="mailto:tongyuw@mail.ustc.edu.cn">Email</a>
     </nav>
@@ -58,28 +57,29 @@
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="affiliation">University of Science and Technology of China</p>
-        <h1 id="hero-title">Tongyu(Tory) Wang</h1>
+        <h1 id="hero-title">Tongyu (Tory) Wang</h1>
         <p class="hero-role">Researcher in Mechanics and Robotics</p>
         <p class="hero-intro">I work at the intersection of mechanics, sensing, and computation. My research focuses on medical and continuum robotics, force inference, physics-based simulation, and Sim2Real control.</p>
         <p class="hero-current"><strong>Current focus:</strong> shape-environment fusion for continuum-robot force sensing and control of magnetic robotic systems for vascular intervention.</p>
         <div class="hero-links">
           <a class="button button-primary" href="#research">Research</a>
-          <a class="button" href="cv.html">CV</a>
+          <a class="button" href="https://tongyuuw.github.io/cv.html">CV</a>
           <a class="text-link" href="mailto:tongyuw@mail.ustc.edu.cn">tongyuw@mail.ustc.edu.cn</a>
         </div>
       </div>
       <figure class="hero-portrait">
-        <img src="images/tongyu-wang.png" alt="Portrait of Tongyu Wang" width="512" height="512">
+        <img src="https://tongyuuw.github.io/images/tongyu-wang.png" alt="Portrait of Tongyu Wang" width="512" height="512">
       </figure>
     </section>
 
     <section class="research-section" id="research" aria-labelledby="research-title">
       <header class="section-heading">
+        <p class="section-kicker">Selected work</p>
         <h2 id="research-title">Research</h2>
         <p>My projects combine analytical models, numerical simulation, estimation, and physical prototyping. The emphasis is on understanding the mechanics well enough to make sensing and control more dependable.</p>
       </header>
 
-      <article class="research-item research-item-text">
+      <article class="research-item">
         <div class="research-meta">
           <p>Georgia Institute of Technology</p>
           <p>Research Assistant, remote</p>
@@ -94,7 +94,24 @@
             <li>Constrained state estimation</li>
             <li>FBG and vision sensing</li>
           </ul>
-          <div class="media-grid" data-project-media="continuum-force-sensing"><!-- Add project figures and videos here. --></div>
+          <div class="media-grid media-grid-featured" data-project-media="continuum-force-sensing">
+            <figure class="research-figure media-wide">
+              <img src="assets/media/continuum-force-sensing-overview.png" alt="Continuum robot shape trajectory, force estimate, estimation error, and load comparison plots" width="1920" height="1280" loading="lazy">
+              <figcaption>Shape reconstruction and contact-force estimation across a constrained rod trajectory.</figcaption>
+            </figure>
+            <figure class="research-video-figure">
+              <video controls playsinline preload="metadata">
+                <source src="assets/media/rod-plane-displacement-force-prediction.mp4" type="video/mp4">
+              </video>
+              <figcaption>Force prediction from rod-plane displacement sensing.</figcaption>
+            </figure>
+            <figure class="research-video-figure">
+              <video controls playsinline preload="metadata">
+                <source src="assets/media/senior-geometry-formulation-prediction.mp4" type="video/mp4">
+              </video>
+              <figcaption>Force prediction using the senior-geometry formulation.</figcaption>
+            </figure>
+          </div>
         </div>
       </article>
 
@@ -108,8 +125,8 @@
           <h3>RuggedizedWrist: distal mobility for contact-rich tool use</h3>
           <p>I am developing a compact two-degree-of-freedom wrist for a Flexiv Rizon 4s. My work spans mechanical design, Isaac Lab comparison of 7- and 9-DoF manipulators, WebXR teleoperation, and tactile-vision sensing with a CoinFT sensor and an optical silicone dome.</p>
           <div class="media-grid" data-project-media="ruggedized-wrist">
-            <figure class="research-figure">
-              <img src="images/research/ruggedized-wrist.jpg" alt="Flexiv robot fitted with the RuggedizedWrist prototype during Stanford BDML experiments" width="1280" height="720" loading="lazy">
+            <figure class="research-figure media-wide">
+              <img src="https://tongyuuw.github.io/images/research/ruggedized-wrist.jpg" alt="Flexiv robot fitted with the RuggedizedWrist prototype during Stanford BDML experiments" width="1280" height="720" loading="lazy">
               <figcaption>RuggedizedWrist hardware and teleoperation setup at Stanford BDML.</figcaption>
             </figure>
           </div>
@@ -130,15 +147,27 @@
           <h3>Sim2Real control for magnetic robotic intervention</h3>
           <p>I built ROS/Gazebo workflows for a magnetic robotic arm, evaluated PRM* motion planning with Cartesian interpolation, and developed continuum-robot simulations in SOFA. The current work studies reinforcement-learning transfer from simulation to a physical system for vascular intervention.</p>
           <div class="media-grid" data-project-media="magnetic-robot-sim2real">
-            <figure class="research-figure plot-figure">
-              <img src="images/research/robot-arm-trajectory.png" alt="Robot-arm trajectory tracking analysis plots" loading="lazy">
+            <figure class="research-video-figure">
+              <video controls playsinline preload="metadata">
+                <source src="assets/media/magnetic-arm-motion.mp4" type="video/mp4">
+              </video>
+              <figcaption>Physical magnetic robotic arm executing the intervention control workflow.</figcaption>
+            </figure>
+            <figure class="research-video-figure">
+              <video controls playsinline preload="metadata">
+                <source src="assets/media/vascular-sofa-simulation.mp4" type="video/mp4">
+              </video>
+              <figcaption>SOFA simulation of continuum-robot navigation through vascular anatomy.</figcaption>
+            </figure>
+            <figure class="research-figure media-wide plot-figure">
+              <img src="https://tongyuuw.github.io/images/research/robot-arm-trajectory.png" alt="Robot-arm trajectory tracking analysis plots" loading="lazy">
               <figcaption>Trajectory-tracking analysis from the simulation workflow.</figcaption>
             </figure>
           </div>
         </div>
       </article>
 
-      <article class="research-item research-item-text">
+      <article class="research-item">
         <div class="research-meta">
           <p>Physics of Fluids Lab, University of Twente</p>
           <p>Visiting Research Student</p>
@@ -153,7 +182,20 @@
             <li>Python analysis</li>
             <li>Model verification</li>
           </ul>
-          <div class="media-grid" data-project-media="active-drops"><!-- Add project figures and videos here. --></div>
+          <div class="media-grid" data-project-media="active-drops">
+            <figure class="research-video-figure">
+              <video controls playsinline preload="metadata">
+                <source src="assets/media/active-drop-concentration.mp4" type="video/mp4">
+              </video>
+              <figcaption>Surfactant-field evolution at R = 80 and Pe = 10.</figcaption>
+            </figure>
+            <figure class="research-video-figure">
+              <video controls playsinline preload="metadata">
+                <source src="assets/media/active-drop-velocity.mp4" type="video/mp4">
+              </video>
+              <figcaption>Velocity-field evolution at R = 80 and Pe = 10.</figcaption>
+            </figure>
+          </div>
         </div>
       </article>
 
@@ -167,8 +209,8 @@
           <h3>Mechanics of slope-based gravity energy storage</h3>
           <p>I develop unequal-height catenary models and numerical solvers for slack and sag in mountain-slope cyclic transmission systems. This work supports mechanical analysis and layout optimization for long-distance, high-load energy storage infrastructure.</p>
           <div class="media-grid" data-project-media="gravity-energy-storage">
-            <figure class="research-figure plot-figure compact-figure">
-              <img src="images/research/catenary-model.png" alt="Unequal-height catenary model with calculated curve and boundary points" loading="lazy">
+            <figure class="research-figure media-wide plot-figure compact-figure">
+              <img src="https://tongyuuw.github.io/images/research/catenary-model.png" alt="Unequal-height catenary model with calculated curve and boundary points" loading="lazy">
               <figcaption>Numerical catenary model for an unequal-height transmission segment.</figcaption>
             </figure>
           </div>
@@ -195,21 +237,9 @@
             <li>Lead analytics</li>
           </ul>
           <div class="media-grid" data-project-media="matchbox">
-            <figure class="research-figure">
-              <img src="images/research/matchbox/matchbox-cover.png" alt="MatchBox hardware prototype with a front display reading matchbox" width="1448" height="1086" loading="lazy">
+            <figure class="research-figure media-wide">
+              <img src="https://tongyuuw.github.io/images/research/matchbox/matchbox-cover.png" alt="MatchBox hardware prototype with a front display reading matchbox" width="1448" height="1086" loading="lazy">
               <figcaption>MatchBox hardware prototype and badge enclosure concept.</figcaption>
-            </figure>
-            <figure class="research-video-figure">
-              <video controls playsinline preload="metadata" poster="images/research/matchbox/matchbox-cover.png">
-                <source src="images/research/matchbox/matchbox-demo.mp4" type="video/mp4">
-              </video>
-              <figcaption>Prototype demo clip from the MatchBox project.</figcaption>
-            </figure>
-            <figure class="research-video-figure">
-              <video controls playsinline preload="metadata" poster="images/research/matchbox/matchbox-cover.png">
-                <source src="images/research/matchbox/matchbox-mobile.mp4" type="video/mp4">
-              </video>
-              <figcaption>Companion mobile interaction clip for the MatchBox workflow.</figcaption>
             </figure>
           </div>
           <div class="project-links">
@@ -221,6 +251,7 @@
 
     <section class="publications-section" id="publications" aria-labelledby="publications-title">
       <header class="section-heading">
+        <p class="section-kicker">Research outputs</p>
         <h2 id="publications-title">Publications</h2>
         <p>Three patent outputs arising from gravity-energy-storage research at Beijing Shidai Heavy Storage Technology. One has been granted; two applications remain pending. They are listed as research outputs and are not peer-reviewed articles.</p>
       </header>
@@ -230,7 +261,7 @@
           <div>
             <h3>Heavy-Load Gravity Energy Storage System</h3>
             <p>Yu Zhang, <strong>Tongyu Wang</strong>, Xiaohan Tang</p>
-            <p class="publication-type">Chinese invention patent, granted 2026-06-26 · ZL 2025 1 1746905.8</p>
+            <p class="publication-type">Chinese invention patent, granted 2026-06-26 | ZL 2025 1 1746905.8</p>
           </div>
         </li>
         <li>
@@ -238,7 +269,7 @@
           <div>
             <h3>Mountain-Based Gravity Energy Storage System</h3>
             <p>Yu Zhang, <strong>Tongyu Wang</strong>, Xiaohan Tang</p>
-            <p class="publication-type">Chinese invention patent application · substantive examination · 202511765995.5</p>
+            <p class="publication-type">Chinese invention patent application | substantive examination | 202511765995.5</p>
           </div>
         </li>
         <li>
@@ -246,7 +277,7 @@
           <div>
             <h3>Gravity Energy Storage Transmission System and Gravity Energy Storage System</h3>
             <p>Yu Zhang, <strong>Tongyu Wang</strong></p>
-            <p class="publication-type">Chinese utility model patent application · accepted 2025-12-02 · 202522556214.3</p>
+            <p class="publication-type">Chinese utility model patent application | accepted 2025-12-02 | 202522556214.3</p>
           </div>
         </li>
       </ol>
@@ -254,6 +285,7 @@
 
     <section class="contact-section" id="contact" aria-labelledby="contact-title">
       <div>
+        <p class="section-kicker">Get in touch</p>
         <h2 id="contact-title">Contact</h2>
         <p>I welcome conversations about medical robotics, continuum mechanics, force sensing, and related research opportunities.</p>
       </div>
@@ -261,13 +293,13 @@
         <a href="mailto:tongyuw@mail.ustc.edu.cn">Email</a>
         <a href="https://www.linkedin.com/in/tongyu-wang-9b972241a/" target="_blank" rel="noreferrer">LinkedIn</a>
         <a href="https://github.com/universeleaf" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="cv.html">CV</a>
+        <a href="https://tongyuuw.github.io/cv.html">CV</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span data-year>2026</span> Tongyu(Tory) Wang</p>
+    <p>&copy; <span data-year>2026</span> Tongyu (Tory) Wang</p>
     <p>Last updated August 2026</p>
   </footer>
 
