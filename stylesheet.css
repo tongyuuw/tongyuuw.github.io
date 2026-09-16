@@ -121,8 +121,13 @@ h2 {
   padding-top: 20px;
   margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 30px;
   color: #000000;
+  line-height: 1.25;
+}
+
+.name-cn {
+  font-weight: 400;
 }
 
 .one {
@@ -219,8 +224,14 @@ span.highlight {
   line-height: 1.45;
 }
 
+.site-footer {
+  text-align: center;
+  font-size: small;
+  margin: 36px 0 48px;
+}
+
 @media (max-width: 640px) {
   .name {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
