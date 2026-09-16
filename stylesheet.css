@@ -176,6 +176,44 @@ span.highlight {
   background: #f3f3f3;
 }
 
+.org-logo {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.org-name,
+.org-role,
+.org-dates,
+.org-desc {
+  color: #000000;
+}
+
+.org-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.org-role {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.org-dates {
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+.org-desc {
+  margin-top: 14px;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
 @media (max-width: 640px) {
   .name {
     font-size: 26px;
