@@ -143,24 +143,11 @@
   </td>
 </tr>
 
-<tr onmouseout="continuum_stop()" onmouseover="continuum_start()" bgcolor="#ffffd0">
+<tr bgcolor="#ffffd0">
   <td style="padding:16px;width:20%;vertical-align:middle">
-    <div class="one contain">
-      <div class="two" id="continuum_image"><video width="100%" height="100%" muted autoplay loop playsinline>
-      <source src="images/continuum.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video></div>
-      <img src="images/continuum.png" width="160" alt="Continuum robot force sensing plots">
+    <div class="one contain" style="background:#000000">
+      <img src="images/enfirce.png" width="160" alt="EnFiRCE hooked-rod contact and friction visualization">
     </div>
-    <script type="text/javascript">
-      function continuum_start() {
-        document.getElementById('continuum_image').style.opacity = "1";
-      }
-      function continuum_stop() {
-        document.getElementById('continuum_image').style.opacity = "0";
-      }
-      continuum_stop()
-    </script>
   </td>
   <td style="padding:20px;width:75%;vertical-align:middle">
     <a href="https://enfirce.github.io/">
